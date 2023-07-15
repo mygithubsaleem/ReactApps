@@ -11,9 +11,7 @@ function App() {
 		{ fruit: "orange", quantity: "24", price: "600" },
 	]);
 	const [currentInput, setCurrentInput] = useState({ fruit: "", quantity: "", price: "" });
-	const [indexNo, setIndexNo] = useState(null);
 	const [selectedIndex, setSelectedIndex] = useState(null);
-	const [totalPrice, setTotalPrice] = useState(null);
 
 	const newtotalPrice = fruits.reduce((acc, currPrice) => {
 		//calculate total
