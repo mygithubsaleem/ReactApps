@@ -1,0 +1,26 @@
+.crudBody {
+	text-align: center;
+	background-color: antiquewhite;
+}
+input {
+	color: rgb(165, 99, 42);
+	height: 30px;
+	border-color: red;
+}
+.heading {
+	color: blue;
+}
+
+.input_btn {
+	margin-left: 20px;
+}
+.col_setting {
+	margin-left: 25%;
+	margin-right: 25%;
+}
+.row_setting {
+	margin-bottom: 20px;
+}
+.rowTotPrice {
+	padding-left: 37%;
+}
