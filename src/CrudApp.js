@@ -13,22 +13,22 @@ function App() {
 	const [currentInput, setCurrentInput] = useState({ fruit: "", quantity: "", price: "" });
 	const [selectedIndex, setSelectedIndex] = useState(null);
 
-	const newtotalPrice = fruits.reduce((acc, currPrice) => {
-		//calculate total
-		let cur = currPrice.price.match(/\d./g).join(""); //parse string to integer(cost)
-		return acc + Number(cur);
-	}, 0);
-	// console.log("total:", newtotalPrice);
-
+	const handleTotalPrice = () => {
+		return fruits.reduce((acc, curr) => Number(acc) + Number(curr.price), 0);
+	};
 	const clearFruits = () => {
 		setFruits([]);
 		setCurrentInput({ fruit: "", quantity: "", price: "" });
 	};
 
 	const addFruit = () => {
-		const addNewFruit = [...fruits, { ...currentInput }];
-		setFruits(addNewFruit);
-		setCurrentInput({ fruit: "", quantity: "", price: "" });
+		if (currentInput.fruit === "" || currentInput.quantity === "" || currentInput.price === "") {
+			alert("Please fill the value first....");
+		} else {
+			const addNewFruit = [...fruits, { ...currentInput }];
+			setFruits(addNewFruit);
+			setCurrentInput({ fruit: "", quantity: "", price: "" });
+		}
 	};
 	const delFruit = (index) => {
 		const deleteFruit = fruits.filter((data, id) => id !== index);
@@ -120,7 +120,7 @@ function App() {
 
 				<div className={crudStyles.col_setting}>
 					{" "}
-					<Row>
+					<Row className={crudStyles.top_row}>
 						<Col>FRUITS</Col>
 						<Col>QUANTITY</Col>
 						<Col>PRICE</Col>
@@ -162,7 +162,7 @@ function App() {
 							</Row>
 						))}
 					</div>
-					<Row className={crudStyles.rowTotPrice}>Total Price={newtotalPrice}</Row>
+					<Row className={crudStyles.rowTotPrice}>Total Price={handleTotalPrice()}</Row>
 				</div>
 
 				<br />

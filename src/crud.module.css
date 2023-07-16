@@ -23,4 +23,11 @@ input {
 }
 .rowTotPrice {
 	padding-left: 37%;
+	color: blue;
+	font-size: larger;
+	font-weight: bold;
+}
+.top_row {
+	color: blue;
+	font-weight: bold;
 }
