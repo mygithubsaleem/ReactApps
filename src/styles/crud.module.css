@@ -6,6 +6,8 @@ input {
 	color: rgb(165, 99, 42);
 	height: 30px;
 	border-color: red;
+	border-radius: 20px;
+	text-align: center;
 }
 .heading {
 	color: blue;

@@ -1,0 +1,12 @@
+.footer_p {
+	background-color: black;
+	/* display: block; */
+	/* grid-template-columns: 10% 10% 10% 10% 10%; */
+	padding-left: 2%;
+	height: 140px;
+	padding-top: 40px;
+}
+.footer_p img {
+text-align: center;
+	margin-right: 40px;
+}
