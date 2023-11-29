@@ -1,6 +1,7 @@
 .crudBody {
 	text-align: center;
 	background-color: antiquewhite;
+	padding-top: 10px;
 }
 input {
 	color: rgb(165, 99, 42);
@@ -32,4 +33,10 @@ input {
 .top_row {
 	color: blue;
 	font-weight: bold;
+}
+.inputBlock{
+
+
+	padding-top: 20px;
+	padding-bottom: 10px;
 }

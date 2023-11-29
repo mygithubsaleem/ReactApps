@@ -53,7 +53,6 @@ function App() {
 		<div>
 			<Form>
 					<p>{<Header />}</p>
-
 				<div className={crudStyles.crudBody}>
 					<h3 className={crudStyles.heading}>CRUD Application</h3>
 

@@ -4,9 +4,13 @@
 	/* grid-template-columns: 10% 10% 10% 10% 10%; */
 	padding-left: 2%;
 	height: 140px;
-	padding-top: 40px;
+	padding-top: 20px;
+	text-align: center;
 }
 .footer_p img {
-text-align: center;
+	text-align: center;
 	margin-right: 40px;
+}
+.footer_p h3 {
+	color: white;
 }
